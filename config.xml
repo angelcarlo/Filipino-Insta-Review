@@ -16,12 +16,16 @@
         <icon src="logo.png" gap:role="default" />
         <preference name="phonegap-version" value="3.3.0" />
         
-     
+        <access origin="*" subdomains="true" />
+        <access uri="*" subdomains="true" />
+       
+        <feature name="InAppBrowser">
+		<param name="android-package" value="org.apache.cordova.InAppBrowser" />
         </feature>
         
         
-        <preference name="orientation" value="portrait" />
-		     <preference name="orientation" value="landscape" />
+        
+		
         <preference name="fullscreen" value="true" />
         <preference name="target-device" value="universal" />
 
